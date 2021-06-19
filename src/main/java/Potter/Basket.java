@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Basket {
 
-    private List<Book> items;
+    private final List<Book> items;
     private final int[] count = {0, 0, 0, 0, 0};
     private final BookShelf shelf;
 
@@ -219,7 +219,5 @@ public class Basket {
     }
 
     public List<Book> getItems() { return items; }
-    public int[] getCount() {
-        return count;
-    }
+    public int[] getCount() { return count; }
 }
